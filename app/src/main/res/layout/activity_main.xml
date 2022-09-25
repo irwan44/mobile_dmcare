@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:minHeight="?attr/actionBarSize"
+            app:titleTextColor="@android:color/background_dark">
+
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:translationX="10dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:longClickable="true"
+                    app:cardBackgroundColor="#FCFCFC"
+                    app:cardPreventCornerOverlap="false">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/profile">
+
+                    </ImageView>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="275dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="d-MCare"
+                    android:textSize="20dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Jakarta Selatan"
+                    android:textSize="20dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:layout_gravity="center"
+                    android:translationY="20dp"
+                    android:src="@drawable/ic_notivsvg">
+
+                </ImageView>
+            </LinearLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        style="@style/parent.contentLayout"
+        android:paddingLeft="@dimen/normalPadding"
+        android:paddingRight="@dimen/normalPadding"
+        android:translationY="60dp"
+        android:paddingBottom="@dimen/normalPadding">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            android:elevation="@dimen/card_image_elevation"
+            android:src="@drawable/ic_doctor" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="127dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            android:minHeight="200dp"
+            app:cardBackgroundColor="#F49E6F"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="@dimen/card_maincourse_elevation"
+            app:cardPreventCornerOverlap="false">
+
+            <LinearLayout
+                android:layout_width="216dp"
+                android:layout_height="137dp"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:translationX="160dp"
+                android:translationY="-4dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="5dp"
+                    android:text="Ketahui tips keamanan dan tindakan pencegahan dari Dokter top.    "
+                    android:textColor="#142237"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/bariol_bold"
+                    android:textStyle="bold"
+                    android:translationY="7dp" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:translationY="15dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="3dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    app:cardBackgroundColor="#FFE8EC"
+                    app:cardPreventCornerOverlap="false">
+
+                    <ImageView
+                        android:layout_width="77dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_scan_1_svgrepo_com">
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:translationX="80dp"
+                        android:gravity="center"
+                        android:fontFamily="@font/bariol_bold"
+                        android:text="Scan Sekarang">
+
+                    </TextView>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="@null">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="80dp"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="690dp"
+                    android:orientation="vertical">
+                    <!--                    Layout Cards-->
+                    <LinearLayout
+                        android:id="@+id/ll_firstcoureses"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/horizontal_dashboard"
+                        android:layout_marginTop="@dimen/normalPadding"
+                        android:layout_marginRight="@dimen/horizontal_dashboard"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <androidx.cardview.widget.CardView
+
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginTop="@dimen/horizontal_card"
+                            android:layout_marginEnd="@dimen/horizontal_card"
+                            android:layout_marginRight="@dimen/horizontal_card"
+                            android:layout_marginBottom="@dimen/horizontal_card"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?attr/selectableItemBackground"
+
+                            app:cardBackgroundColor="#FFE8EC"
+
+
+                            app:cardCornerRadius="@dimen/card_radius"
+                            app:cardElevation="4dp"
+                            app:cardPreventCornerOverlap="false">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/card_view_image"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/img_card_height"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/kepesertaan" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/normalPadding"
+                                    android:layout_marginTop="@dimen/top_text_card"
+
+                                    android:layout_marginRight="@dimen/normalPadding"
+
+
+                                    android:fontFamily="@font/bariol_bold"
+                                    android:text="Kepesertaan"
+                                    android:textColor="#FC1441"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/normalPadding"
+                                    android:layout_marginTop="@dimen/top_text_subtitle_card"
+
+                                    android:layout_marginRight="@dimen/normalPadding"
+                                    android:layout_marginBottom="@dimen/normalPadding"
+
+                                    android:fontFamily="@font/bariol_bold"
+
+                                    android:text="19 courses"
+                                    android:textColor="#FC1441"
+                                    android:textSize="11sp" />
+
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+
+                            android:layout_width="0dp"
+
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginLeft="@dimen/horizontal_card"
+                            android:layout_marginTop="@dimen/horizontal_card"
+                            android:layout_marginBottom="@dimen/horizontal_card"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?attr/selectableItemBackground"
+                            app:cardBackgroundColor="#E8F3FF"
+                            app:cardCornerRadius="@dimen/card_radius"
+                            app:cardElevation="4dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+
+                                    android:layout_height="@dimen/img_card_height"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/raimburse" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/normalPadding"
+                                    android:layout_marginTop="@dimen/top_text_card"
+
+                                    android:layout_marginRight="@dimen/normalPadding"
+
+
+                                    android:fontFamily="@font/bariol_bold"
+                                    android:text="Raimurse"
+                                    android:textColor="#157FFB"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/normalPadding"
+                                    android:layout_marginTop="@dimen/top_text_subtitle_card"
+
+                                    android:layout_marginRight="@dimen/normalPadding"
+                                    android:layout_marginBottom="@dimen/normalPadding"
+
+                                    android:fontFamily="@font/bariol_bold"
+                                    android:text="21 courses"
+                                    android:textColor="#157FFB"
+                                    android:textSize="11sp" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_secondcoureses"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/horizontal_dashboard"
+                        android:layout_marginTop="@dimen/normalPadding"
+                        android:layout_marginRight="@dimen/horizontal_dashboard"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+
+                        <androidx.cardview.widget.CardView
+
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginTop="@dimen/horizontal_card"
+                            android:layout_marginRight="@dimen/horizontal_card"
+                            android:layout_marginBottom="@dimen/horizontal_card"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            android:focusable="true"
+
+                            android:foreground="?attr/selectableItemBackground"
+                            app:cardBackgroundColor="#EBF7ED"
+                            app:cardCornerRadius="@dimen/card_radius"
+                            app:cardElevation="4dp"
+                            app:cardPreventCornerOverlap="false">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <ImageView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/img_card_height"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/hssi" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/normalPadding"
+                                    android:layout_marginTop="@dimen/top_text_card"
+
+                                    android:layout_marginRight="@dimen/normalPadding"
+
+
+                                    android:fontFamily="@font/bariol_bold"
+                                    android:text="Data HSSI"
+                                    android:textColor="#30A64A"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/normalPadding"
+                                    android:layout_marginTop="@dimen/top_text_subtitle_card"
+
+                                    android:layout_marginRight="@dimen/normalPadding"
+                                    android:layout_marginBottom="@dimen/normalPadding"
+
+                                    android:fontFamily="@font/bariol_bold"
+                                    android:text="19 courses"
+                                    android:textColor="#30A64A"
+                                    android:textSize="11sp" />
+
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+
+                            android:layout_width="0dp"
+
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginLeft="@dimen/horizontal_card"
+                            android:layout_marginTop="@dimen/horizontal_card"
+                            android:layout_marginBottom="@dimen/horizontal_card"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?attr/selectableItemBackground"
+                            app:cardBackgroundColor="#FFEBE0"
+                            app:cardCornerRadius="@dimen/card_radius"
+                            app:cardElevation="4dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+
+                                    android:layout_height="@dimen/img_card_height"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/datars" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/normalPadding"
+                                    android:layout_marginTop="@dimen/top_text_card"
+
+                                    android:layout_marginRight="@dimen/normalPadding"
+
+
+                                    android:fontFamily="@font/bariol_bold"
+                                    android:text="Data RS end FKTP"
+                                    android:textColor="#A74813"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/normalPadding"
+                                    android:layout_marginTop="@dimen/top_text_subtitle_card"
+
+                                    android:layout_marginRight="@dimen/normalPadding"
+                                    android:layout_marginBottom="@dimen/normalPadding"
+
+                                    android:fontFamily="@font/bariol_bold"
+                                    android:text="21 courses"
+                                    android:textColor="#A74813"
+                                    android:textSize="11sp" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
