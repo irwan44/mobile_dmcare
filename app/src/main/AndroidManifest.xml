@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.dmcareandroid">
-
+    <uses-permission android:name="android.permission.CAMERA" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher_round"
@@ -12,14 +12,61 @@
         android:theme="@style/AppTheme"
         tools:targetApi="31">
         <activity
+            android:name=".scan.Scanner"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".datarsfktp.DataRSActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".hssi.HssiActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".raimurse.RaimurseActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".peserta.PesertaanActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Notification.ActivityNotification"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".profile.SettingsActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
             android:name=".login.Login"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
-            android:windowSoftInputMode="adjustPan">
-
-        </activity>
+            android:windowSoftInputMode="adjustPan" />
         <activity
             android:name=".SplashActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
@@ -39,18 +86,14 @@
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
-            android:windowSoftInputMode="adjustPan">
-
-        </activity>
+            android:windowSoftInputMode="adjustPan" />
         <activity
             android:name=".MainActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
-            android:windowSoftInputMode="adjustPan">
-
-        </activity>
+            android:windowSoftInputMode="adjustPan" />
     </application>
 
 </manifest>

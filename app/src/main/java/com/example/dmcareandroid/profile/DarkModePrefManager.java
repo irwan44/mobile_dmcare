@@ -1,8 +1,4 @@
-package com.appsnipp.mysettings;
-
-/**
- * Created by kapil on 20/01/17.
- */
+package com.example.dmcareandroid.profile;
 import android.content.Context;
 import android.content.SharedPreferences;
 
@@ -33,7 +29,7 @@ public class DarkModePrefManager {
     }
 
     public boolean isNightMode() {
-        return pref.getBoolean(IS_NIGHT_MODE, true);
+        return pref.getBoolean(IS_NIGHT_MODE, false);
     }
 
 }

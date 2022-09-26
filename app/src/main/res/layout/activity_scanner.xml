@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Scanner">
+    tools:context=".scan.Scanner">
 
     <ImageView
         android:id="@+id/ivBgContent"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/bg_content"
+        android:background="@drawable/scan"
         tools:ignore="ContentDescription" />
 
     <com.budiyev.android.codescanner.CodeScannerView

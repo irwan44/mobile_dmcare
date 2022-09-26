@@ -1,18 +1,24 @@
-package com.app.qrcodescanner;
+package com.example.dmcareandroid.scan;
 
 import android.Manifest;
 import android.content.DialogInterface;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
+import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.budiyev.android.codescanner.CodeScanner;
 import com.budiyev.android.codescanner.CodeScannerView;
 import com.budiyev.android.codescanner.DecodeCallback;
 import com.google.zxing.Result;
+
+import com.example.dmcareandroid.R;
 import com.karumi.dexter.Dexter;
 import com.karumi.dexter.PermissionToken;
 import com.karumi.dexter.listener.PermissionDeniedResponse;
@@ -51,6 +57,18 @@ public class Scanner extends AppCompatActivity {
         });
 
         checkCameraPermission();
+    }
+    public void transparentStatusBar() {
+        Window window = getWindow();
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+            window.setDecorFitsSystemWindows(false);
+        } else {
+            window.setFlags(
+                    WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
+                    WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
+            );
+        }
+        window.setStatusBarColor(Color.TRANSPARENT);
     }
 
     @Override

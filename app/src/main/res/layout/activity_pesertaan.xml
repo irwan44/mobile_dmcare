@@ -5,5 +5,49 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".peserta.PesertaanActivity">
+    <androidx.core.widget.NestedScrollView
 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:minHeight="?attr/actionBarSize"
+        app:titleTextColor="@android:color/background_dark"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:onClick="closenotiv"
+            android:src="@drawable/ic_icon_left">
+
+        </ImageView>
+        <LinearLayout
+            android:layout_width="275dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Kepesertaan"
+                android:textSize="20dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,7 +12,6 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.view.WindowCompat;
 import androidx.viewpager.widget.ViewPager;
 
 import com.example.dmcareandroid.login.Login;
@@ -33,7 +32,7 @@ public class IntroActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         if (restorePreData()){
-            Intent mainActivity = new Intent(getApplicationContext(), MainActivity.class);
+            Intent mainActivity = new Intent(getApplicationContext(), Login.class);
             startActivity(mainActivity);
             finish();
         }
@@ -90,7 +89,7 @@ public class IntroActivity extends AppCompatActivity {
         btnGetStarted.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent mainActivity = new Intent(getApplicationContext(), MainActivity.class);
+                Intent mainActivity = new Intent(getApplicationContext(),Login.class);
                 startActivity(mainActivity);
                 savePrefsData();
                 finish();
